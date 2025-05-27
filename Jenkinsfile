@@ -25,7 +25,7 @@ pipeline {
         
        stage('Post Build') {
            steps {
-               junit '*/test-results/test/*.xml'
+               junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
            }
        }
     }
