@@ -9,6 +9,9 @@ STEPS:
   ![image](https://github.com/user-attachments/assets/12cfd7f9-37e2-4105-be6c-619f5f7021a2)
   
   E. Write scripted pipeline instructions in **Jenkinsfile** This will build the Java application and perform tests, also save the test reports as artifacts.
+  ![image](https://github.com/user-attachments/assets/b30db7da-2f94-4f82-8e42-c842d8b0d401)
+
+
 
   NOTE:
   **TO TRIGGER PIPELINE AUTOMATICALLY JENKINS WEB APPLICATION SHOULD BE PUBLICALLY AVAILABLE OVER INTERNET.**
