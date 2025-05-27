@@ -22,14 +22,12 @@ pipeline {
                 }
             
             }
-        }
-     }
-    post {
-       always {
-          junit(
-        allowEmptyResults: true,
-        testResults: '*/test-reports/.xml'
-      )
-      }
-   } 
-//}
+        
+       stage('Post Build') {
+           steps {
+               junit '*/test-results/test/*.xml'
+           }
+       }
+    }
+} 
+ 
