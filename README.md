@@ -7,5 +7,20 @@ STEPS:
   D. Add MAVEN plugins and configure JDK & MAVEN in Jenkins (Jenkins dashboard > Manage Jenkins > Tools)
   ![image](https://github.com/user-attachments/assets/3620212c-a293-4d5b-a8c7-d663b10631ec)
   ![image](https://github.com/user-attachments/assets/12cfd7f9-37e2-4105-be6c-619f5f7021a2)
-  E. Write scripted pipeline instructions in **Jenkinsfile**
+  
+  E. Write scripted pipeline instructions in **Jenkinsfile** This will build the Java application and perform tests, also save the test reports as artifacts.
+
+  NOTE:
+  **TO TRIGGER PIPELINE AUTOMATICALLY JENKINS WEB APPLICATION SHOULD BE PUBLICALLY AVAILABLE OVER INTERNET.**
+  Then in Github repository > Setings > Webhooks > Add Webhook > provide payload URL (Jenkins URL) & select events would you like to trigger the webhook.
+
+  **ISSUE** - Maven compilation error
+
+  ![image](https://github.com/user-attachments/assets/09f9e6fc-eb46-4b92-a7e3-e1fb46c746a2)
+
+  
+ **SOLUTION** - Change maven compiler version in pom.xml 
+
+ ![image](https://github.com/user-attachments/assets/a51cf998-7afe-4463-a0ab-3e709303b6fd)
+
   
